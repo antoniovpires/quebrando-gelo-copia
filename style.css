@@ -219,36 +219,36 @@ footer {
     color: white;
 }
 
-footer .col-3 {
+footer .col-lg-3 {
     text-align: center;
     justify-content: center;
     padding-bottom: 2rem;
 }
 
-footer .col-3 h5 {
+footer .col-lg-3 h5 {
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-footer .col-3:hover h5 {
+footer .col-lg-3:hover h5 {
     font-size: 1.5rem;
     transition: 0.3s;
 }
 
-footer .col-3 li {
+footer .col-lg-3 li {
     list-style: none;
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
 }
 
-footer .col-3 li a {
+footer .col-lg-3 li a {
     text-decoration: none;
     color: white;
     padding: 0.4rem;
     border-radius: 10px;
 }
 
-footer .col-3 li a:hover {
+footer .col-lg-3 li a:hover {
     background-color:#0c1f27;
     transition: 0.3s;
     font-size: 1.3rem;
@@ -262,317 +262,179 @@ footer p {
     font-weight: bold;
 }
 
-
-@media (min-width: 1280px) and (max-width: 1700px) {
-    #editora-logo {
-        margin-left: 1.5rem;
+@media (max-height: 900px) {
+    #wrapper{
+        padding-top: 20px;
+        text-align: center;
     }
 
-    #book-picture {
-        width: 170%;
-    }
-
-    #book-picture:hover {
-        width: 180%;
-    }
-
-    .benefits-list li {
-        font-size: 1.5rem;
-    }
-
-    .whale-and-form {
-        margin-left: 20rem;
+    header {
+        width: 100%;
     }
     
-    .whale-descript {
-        margin-right: 3rem;
-    }
-
-    .author-division {
-        margin-top: 5rem;
-        padding: 2rem;
-    }
-
-    footer .col-3 h5 {
-        font-size: 1.1rem;
+    .blue-section {
+        background-color: var(--color1);
+        height: 15rem;
     }
     
-    footer .col-3 li {
-        font-size: 1rem;
-    }
-}
-
-@media (min-width: 1200px) and (max-width: 1360px) {
-    #editora-logo {
-        margin-left: 1.5rem;
-    }
-
-    #book-picture {
-        width: 160%;
-    }
-
-    #book-picture:hover {
-        width: 170%;
-    }
-
-    .benefits-list li {
-        font-size: 1.25rem;
-    }
-
-    .whale-and-form {
-        margin-left: 18rem;
-    }
-    
-    .whale-descript {
-        max-width: 40%;
-        margin-right: 6.5rem;
-    }
-
-    .author-division {
-        margin-top: 5rem;
-        padding: 2rem;
-    }
-
-    footer .col-3 h5 {
-        font-size: 1rem;
-    }
-    
-    footer .col-3 li {
-        font-size: 0.9rem;
-    }
-}
-
-@media (max-width: 1200px) {
-    #editora-logo {
-        margin-left: 1.5rem;
-    }
-
-    #book-picture {
-        margin: auto;
-        width: 160%;
-    }
-
-    #book-picture:hover {
-        width: 170%;
-    }
-
-    .benefits-list li {
-        font-size: 1.2rem;
-    }
-
-    .whale-and-form {
-        margin-left: 16rem;
-    }
-    
-    .whale-descript {
-        max-width: 40%;
-        margin-right: 4.3rem;
-    }
-
-    .author-division {
-        margin-top: 5rem;
-        padding: 2rem;
-    }
-
-    footer .col-3 h5 {
-        font-size: 1rem;
-    }
-    
-    footer .col-3 li {
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 900px) {
     .white-section {
-        padding-top: 3rem;
-        padding-bottom: 4rem;
+        padding-top: 30rem;
+        background-color: var(--color3);
+        padding-bottom: 5rem;
     }
     
     /*------------PICTURES------------*/
     #editora-logo {
-        width: 15%;
+        width: 20%;
     }
     
     #book-picture {
-        width: 200%;
+        width: 60%;
+        margin: auto;
+    }
+    
+    #book-picture:hover {
+        width: 65%;
+        transition: 0.5s; 
     }
     
     #authors-picture {
-        width: 40%;
+        width: 20%;
         border-radius: 100%;
     }
     /*--------------------------------*/
+    .check-icon {
+        background-color: var(--color1);
+        padding: 0.5rem;
+        border-radius: 50%;
+    }
+    
     .flex-container {
         display: flex;
         text-align: center;
         justify-content: center;
-        margin: auto;
-        width: 80%;
+        width: 90%;
+    }
+
+    .benefits-and-book {
+        flex-direction: column-reverse;
     }
     
     .benefits-form {
         text-align: left;
+        flex-direction: column-reverse;
+        display: flex;
     }
     
     .benefits-form button {
-        margin-bottom: 5rem;
+        margin-bottom: 0rem;
     }
-    
+
     .benefits-list {
-        margin-top: 2rem;
-        text-align: justify;
+        margin-top: 1rem;
+        text-align: center;
     }
     
     .benefits-list li {
-        color: white;
+        color: rgb(46, 46, 46);
         font-size: 1rem;
-        font-weight: 600;
         margin-bottom: 1rem;
     }
     
     .benefits-list li h4 {
-        font-size: 1.1rem;
-        margin-bottom: 0rem;
+        display: none;
+    }
+    
+    .benefits-list .bar {
+        margin-bottom: 3rem;
+        width: 100%;
     }
     
     .btn-benefit {
-        margin-left: 10%;
-    }
-    
-    .bar {
-        width: 100%;
+        margin: auto;
+        margin-top: 2rem;
+        font-size: 1.5rem;
     }
     
     .whale-and-form {
         display: block;
-        max-width: 100%;
+        margin: auto;
+        justify-content: start;
     }
     
     .whale-descript {
-        max-width: 100%;
-        margin-left: 1.5rem;
-        margin-bottom: 2rem;
+        display: none;
     }
-    
+
     .book-submit {
+        padding: 3em 2em 3em 2em;
+        box-shadow: none;
         margin: auto;
-        padding: 2em 0em 2em 0em;
-        width: 80%;
     }
     
     .book-submit h6 {
         text-align: center;
-        font-size: 1.1rem;
     }
     
     .book-submit-input {
-        margin-bottom: 1rem;
-        width: 50%;
-    }
-    
-    .author-division {
-        display: block;
-        margin-top: 4rem;
-        padding: 2rem;
-    }
-
-    footer .col-3 h5 {
-        font-size: 1rem;
-    }
-    
-    footer .col-3 li {
-        font-size: 0.9rem;
-    }
-}
-
-@media (min-width: 0px) and (max-width: 900px) {
-    /*------------PICTURES------------*/
-    #editora-logo {
-        width: 25%;
-    }
-    
-    #book-picture {
-        width: 100%;
-    }
-    
-    #authors-picture {
-        width: 60%;
-        border-radius: 100%;
-    }
-    /*--------------------------------*/
-    .flex-container {
-        display: block;
-        text-align: center;
-        justify-content: center;
-        margin: auto;
-        width: 80%;
-    }
-    
-    .benefits-form {
-        text-align: left;
-        margin: auto;
-    }
-    
-    .benefits-form button {
-        margin-bottom: 1rem;
-    }
-    
-    .benefits-list {
-        margin-top: 2rem;
-        text-align: justify;
-    }
-    
-    .benefits-list li {
-        color: white;
-        font-size: 1rem;
-        font-weight: 600;
-        margin-bottom: 1rem;
-    }
-    
-    .benefits-list li h4 {
-        font-size: 1.1rem;
-        margin-bottom: 0rem;
-        margin-left: 3rem;
-    }
-    
-    .bar {
-        width: 80%;
-        margin: auto;
-    }
-    
-    .whale-and-form {
-        display: block;
-        margin-left: 4rem;
-    }
-
-    .book-submit {
-        margin-left: 1rem;
-        padding: 2em 0em 2em 0em;
-        width: 80%;
-    }
-    
-    .book-submit h6 {
-        text-align: center;
-        font-size: 1.1rem;
-    }
-    
-    .book-submit-input {
-        margin-bottom: 1rem;
         width: 90%;
     }
     
-    .author-division {
-        display: block;
-        margin-top: 4rem;
-        padding: 2rem;
-    }
-
-    footer .col-3 h5 {
-        font-size: 1rem;
+    .book-submit button {
+        margin-top: 1rem;
     }
     
-    footer .col-3 li {
-        font-size: 0.9rem;
+    .author-division {
+        border: 5px solid rgb(213, 213, 213);
+        display: block;
+        margin-top: 8rem;
+        padding: 2rem;
+        box-shadow: none;
+    }
+    
+    footer {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        background-color: var(--color2);
+        color: white;
+    }
+    
+    footer .col-lg-3 {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+    }
+    
+    footer .col-lg-3 h5 {
+        font-weight: bold;
+        width: 100%;
+        font-size: 1.3rem;
+    }
+    
+    footer .col-lg-3:hover h5 {
+        font-size: 1.5rem;
+        transition: 0.3s;
+    }
+    
+    footer .col-lg-3 li {
+        width: 100%;
+        list-style: none;
+        font-size: 1.2rem;
+        margin-bottom: 0.7rem;
+    }
+    
+    footer .col-lg-3 li a {
+        text-decoration: none;
+        color: white;
+        padding: 0.4rem;
+        border-radius: 10px;
+        margin: auto;
+        text-align: center;
+    }
+    
+    footer .col-lg-3 li a:hover {
+        background-color:none;
+        transition: 0.3s;
+        font-size: 1.3rem;
     }
 }
