@@ -1,0 +1,529 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Merriweather+Sans:ital@1&family=Oleo+Script+Swash+Caps&display=swap');
+
+/* 
+font-family: 'Arvo', serif;
+font-family: 'Merriweather Sans', sans-serif;
+font-family: 'Oleo Script Swash Caps', cursive; */
+
+:root {
+    --color1: #398aac;
+    --color2: #143340;
+    --color3: #eeeeee;
+    margin: 0px;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+header {
+    width: 60%;
+    margin: auto;
+}
+
+body {
+    background-color: var(--color1);
+}
+
+.blue-section {
+    background-color: var(--color1);
+}
+
+.white-section {
+    padding-top: 6rem;
+    background-color: var(--color3);
+    padding-bottom: 6rem;
+}
+
+/*------------PICTURES------------*/
+#editora-logo {
+    width: 10%;
+}
+
+#book-picture {
+    width: 120%;
+}
+
+#book-picture:hover {
+    width: 125%;
+    transition: 0.5s; 
+}
+
+#authors-picture {
+    width: 20%;
+    border-radius: 100%;
+}
+/*--------------------------------*/
+.check-icon {
+    background-color: #143340;
+    padding: 0.5rem;
+    border-radius: 50%;
+}
+
+.flex-container {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    width: 60%;
+}
+
+.benefits-form {
+    text-align: left;
+}
+
+.benefits-form button {
+    margin-bottom: 5rem;
+}
+
+.benefits-list {
+    margin-top: 2rem;
+    text-align: justify;
+}
+
+.benefits-list li {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 500;
+    list-style: none;
+    margin-bottom: 1rem;
+}
+
+.benefits-list li h4 {
+    font-size: 1.3rem;
+    margin-bottom: 0rem;
+}
+
+.btn-warning a {
+    font-family: 'Merriweather Sans', sans-serif;
+    text-decoration: none;
+    color: black;
+}
+
+.btn-benefit {
+    margin-left: 5%;
+}
+
+.bar {
+    background-color: rgba(0, 0, 0, 0.15);
+    height: 0.08rem;
+    width: 50%;
+    margin-bottom: 5rem;
+}
+
+.whale-and-form {
+    justify-content: start;
+    margin-left: 26rem;
+}
+
+.whale-descript {
+    max-width: 50%;
+    margin-right: 7rem;
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(46, 46, 46);
+}
+
+.whale-descript p {
+    text-align: justify;
+}
+
+.whale-descript .bar {
+    list-style: none;
+    text-align: right;
+    width: 100%;
+    margin-bottom: 1.5rem;
+}
+
+.whale-descript h6 {
+    text-align: right;
+    margin-top: -1.2rem;
+}
+
+.whale-descript h6 a {
+    text-decoration: none;
+    color: rgb(46, 46, 46);
+}
+
+.book-submit {
+    padding: 3em 4.5em 3em 2em;
+    background-color: var(--color1);
+    border-radius: 8%;
+    box-shadow: -10px 8px rgba(0, 0, 0, 0.152);
+}
+
+.book-submit h6 {
+    text-align: left;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-size: 1.1rem;
+    color: black;
+}
+
+.book-submit-input {
+    margin-bottom: 1rem;
+    width: 120%;
+}
+
+.book-submit button {
+    margin-top: 1rem;
+}
+
+.author-division {
+    border: 5px solid rgb(213, 213, 213);
+    border-radius: 3%;
+    display: block;
+    margin-top: 8rem;
+    padding: 3rem;
+    box-shadow: -10px 8px rgba(0, 0, 0, 0.152);
+}
+
+.author-descript p {
+    font-family: 'Merriweather Sans', sans-serif;
+    color: rgb(46, 46, 46);
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.author-medias {
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.author-medias a {
+    color: #398aac;
+    font-size: 2.5rem;
+    margin-right: 2rem;
+}
+
+.author-medias:hover a {
+    font-size: 2.7rem;
+    transition: 0.5s;
+}
+
+.author-medias a:hover {
+    font-size: 3rem;
+    transition: 0.3s;
+} 
+
+footer {
+    padding-top: 3rem;
+    padding-bottom: 2rem;
+    background-color: var(--color2);
+    color: white;
+}
+
+footer .col-3 {
+    text-align: center;
+    justify-content: center;
+    padding-bottom: 2rem;
+}
+
+footer .col-3 h5 {
+    font-weight: bold;
+    font-size: 1.3rem;
+}
+
+footer .col-3:hover h5 {
+    font-size: 1.5rem;
+    transition: 0.3s;
+}
+
+footer .col-3 li {
+    list-style: none;
+    font-size: 1.2rem;
+    margin-bottom: 0.7rem;
+}
+
+footer .col-3 li a {
+    text-decoration: none;
+    color: white;
+    padding: 0.4rem;
+    border-radius: 10px;
+}
+
+footer .col-3 li a:hover {
+    background-color:#0c1f27;
+    transition: 0.3s;
+    font-size: 1.3rem;
+}
+
+footer p {
+    text-align: center;
+    justify-content: center;
+    padding-top: 0.6rem;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+@media (min-width: 1280px) and (max-width: 1700px) {
+    #editora-logo {
+        margin-left: 1.5rem;
+    }
+
+    #book-picture {
+        width: 170%;
+    }
+
+    #book-picture:hover {
+        width: 180%;
+    }
+
+    .benefits-list li {
+        font-size: 1.5rem;
+    }
+
+    .whale-and-form {
+        margin-left: 20rem;
+    }
+    
+    .whale-descript {
+        margin-right: 3rem;
+    }
+
+    .author-division {
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1360px) {
+    #editora-logo {
+        margin-left: 1.5rem;
+    }
+
+    #book-picture {
+        width: 160%;
+    }
+
+    #book-picture:hover {
+        width: 170%;
+    }
+
+    .benefits-list li {
+        font-size: 1.25rem;
+    }
+
+    .whale-and-form {
+        margin-left: 18rem;
+    }
+    
+    .whale-descript {
+        max-width: 40%;
+        margin-right: 6.5rem;
+    }
+
+    .author-division {
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 1200px) {
+    #editora-logo {
+        margin-left: 1.5rem;
+    }
+
+    #book-picture {
+        margin: auto;
+        width: 160%;
+    }
+
+    #book-picture:hover {
+        width: 170%;
+    }
+
+    .benefits-list li {
+        font-size: 1.2rem;
+    }
+
+    .whale-and-form {
+        margin-left: 16rem;
+    }
+    
+    .whale-descript {
+        max-width: 40%;
+        margin-right: 4.3rem;
+    }
+
+    .author-division {
+        margin-top: 5rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    .white-section {
+        padding-top: 3rem;
+        padding-bottom: 4rem;
+    }
+    
+    /*------------PICTURES------------*/
+    #editora-logo {
+        width: 15%;
+    }
+    
+    #book-picture {
+        width: 200%;
+    }
+    
+    #authors-picture {
+        width: 40%;
+        border-radius: 100%;
+    }
+    /*--------------------------------*/
+    .flex-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .benefits-form {
+        text-align: left;
+    }
+    
+    .benefits-form button {
+        margin-bottom: 5rem;
+    }
+    
+    .benefits-list {
+        margin-top: 2rem;
+        text-align: justify;
+    }
+    
+    .benefits-list li {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .benefits-list li h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+    }
+    
+    .btn-benefit {
+        margin-left: 10%;
+    }
+    
+    .bar {
+        width: 100%;
+    }
+    
+    .whale-and-form {
+        display: block;
+        max-width: 100%;
+    }
+    
+    .whale-descript {
+        max-width: 100%;
+        margin-left: 1.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .book-submit {
+        margin: auto;
+        padding: 2em 0em 2em 0em;
+        width: 80%;
+    }
+    
+    .book-submit h6 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .book-submit-input {
+        margin-bottom: 1rem;
+        width: 50%;
+    }
+    
+    .author-division {
+        display: block;
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+}
+
+@media (min-width: 0px) and (max-width: 900px) {
+    /*------------PICTURES------------*/
+    #editora-logo {
+        width: 25%;
+    }
+    
+    #book-picture {
+        width: 100%;
+    }
+    
+    #authors-picture {
+        width: 60%;
+        border-radius: 100%;
+    }
+    /*--------------------------------*/
+    .flex-container {
+        display: block;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+    
+    .benefits-form {
+        text-align: left;
+        margin: auto;
+    }
+    
+    .benefits-form button {
+        margin-bottom: 1rem;
+    }
+    
+    .benefits-list {
+        margin-top: 2rem;
+        text-align: justify;
+    }
+    
+    .benefits-list li {
+        color: white;
+        font-size: 1rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+    
+    .benefits-list li h4 {
+        font-size: 1.1rem;
+        margin-bottom: 0rem;
+        margin-left: 3rem;
+    }
+    
+    .bar {
+        width: 80%;
+        margin: auto;
+    }
+    
+    .whale-and-form {
+        display: block;
+        margin-left: 4rem;
+    }
+
+    .book-submit {
+        margin-left: 1rem;
+        padding: 2em 0em 2em 0em;
+        width: 80%;
+    }
+    
+    .book-submit h6 {
+        text-align: center;
+        font-size: 1.1rem;
+    }
+    
+    .book-submit-input {
+        margin-bottom: 1rem;
+        width: 90%;
+    }
+    
+    .author-division {
+        display: block;
+        margin-top: 4rem;
+        padding: 2rem;
+    }
+}
