@@ -24,6 +24,7 @@ body {
 
 .blue-section {
     background-color: var(--color1);
+    height: 40rem;
 }
 
 .white-section {
@@ -35,14 +36,15 @@ body {
 /*------------PICTURES------------*/
 #editora-logo {
     width: 10%;
+    margin-left: 1.3rem;
 }
 
 #book-picture {
-    width: 120%;
+    width: 100%;
 }
 
 #book-picture:hover {
-    width: 125%;
+    width: 105%;
     transition: 0.5s; 
 }
 
@@ -80,15 +82,20 @@ body {
 
 .benefits-list li {
     color: white;
-    font-size: 1.5rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: 600;
     list-style: none;
     margin-bottom: 1rem;
+    font-style: italic;
 }
 
 .benefits-list li h4 {
     font-size: 1.3rem;
     margin-bottom: 0rem;
+}
+
+.benefits-list .bar {
+    margin-bottom: 3rem;
 }
 
 .btn-warning a {
@@ -98,7 +105,9 @@ body {
 }
 
 .btn-benefit {
+    margin-top: 2rem;
     margin-left: 5%;
+    font-size: 1.7rem;
 }
 
 .bar {
@@ -249,7 +258,7 @@ footer p {
     text-align: center;
     justify-content: center;
     padding-top: 0.6rem;
-    font-size: 1.2rem;
+    font-size: 1rem;
     font-weight: bold;
 }
 
@@ -283,6 +292,14 @@ footer p {
         margin-top: 5rem;
         padding: 2rem;
     }
+
+    footer .col-3 h5 {
+        font-size: 1.1rem;
+    }
+    
+    footer .col-3 li {
+        font-size: 1rem;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1360px) {
@@ -314,6 +331,14 @@ footer p {
     .author-division {
         margin-top: 5rem;
         padding: 2rem;
+    }
+
+    footer .col-3 h5 {
+        font-size: 1rem;
+    }
+    
+    footer .col-3 li {
+        font-size: 0.9rem;
     }
 }
 
@@ -347,6 +372,14 @@ footer p {
     .author-division {
         margin-top: 5rem;
         padding: 2rem;
+    }
+
+    footer .col-3 h5 {
+        font-size: 1rem;
+    }
+    
+    footer .col-3 li {
+        font-size: 0.9rem;
     }
 }
 
@@ -443,6 +476,14 @@ footer p {
         margin-top: 4rem;
         padding: 2rem;
     }
+
+    footer .col-3 h5 {
+        font-size: 1rem;
+    }
+    
+    footer .col-3 li {
+        font-size: 0.9rem;
+    }
 }
 
 @media (min-width: 0px) and (max-width: 900px) {
@@ -525,5 +566,13 @@ footer p {
         display: block;
         margin-top: 4rem;
         padding: 2rem;
+    }
+
+    footer .col-3 h5 {
+        font-size: 1rem;
+    }
+    
+    footer .col-3 li {
+        font-size: 0.9rem;
     }
 }
