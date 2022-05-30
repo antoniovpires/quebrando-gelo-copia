@@ -275,11 +275,11 @@ footer p {
   
     .blue-section {
         background-color: var(--color1);
-        height: 60rem;
+        height: 23rem;
     }
     
     .white-section {
-        padding-top: 6rem;
+        padding-top: 36rem;
         background-color: var(--color3);
         padding-bottom: 6rem;
     }
@@ -287,12 +287,17 @@ footer p {
     /*------------PICTURES------------*/
     #editora-logo {
         width: 15%;
-        margin-left: 0px;
+        margin-left: 1rem;
     }
     
     #book-picture {
         width: 80%;
         margin: auto;
+    }
+
+    #book-picture:hover {
+        width: 80%;
+        transition: 0.5s; 
     }
     
     #authors-picture {
@@ -304,6 +309,7 @@ footer p {
         background-color: var(--color2);
         padding: 0.5rem;
         border-radius: 100%;
+        color: var(--color3);
     }
     
     .flex-container {
@@ -340,7 +346,7 @@ footer p {
     }
     
     .benefits-list li {
-        color: var(--color3);
+        color: var(--color6);
         font-size: 1.3rem;
         font-weight: 600;
         list-style: none;
@@ -351,7 +357,7 @@ footer p {
     .benefits-list li h4 {
         display: none;
     }
-    
+
     .benefits-list .bar {
         display: none;
     }
@@ -388,10 +394,11 @@ footer p {
     .book-submit h6 {
         text-align: center;
         font-family: 'Merriweather Sans', sans-serif;
-        font-size: 1.1rem;
-        color: var(--color4);
+        font-size: 1.2rem;
+        color: var(--color3);
         width: 60%;
         margin: auto;
+        margin-bottom: 0.5rem;
     }
     
     .book-submit-input {
