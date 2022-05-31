@@ -71,17 +71,11 @@ body {
     width: 60%;
 }
 
-.benefits-form {
-    text-align: left;
-}
-
-.benefits-form button {
-    margin-bottom: 5rem;
-}
-
 .benefits-list {
     margin-top: 2rem;
     text-align: justify;
+    padding-left: 0;
+    width: 90%;
 }
 
 .benefits-list li {
@@ -110,8 +104,8 @@ body {
 
 .btn-benefit {
     margin-top: 2rem;
-    margin-left: 5%;
     font-size: 1.7rem;
+    display: flex;
 }
 
 .bar {
@@ -121,20 +115,15 @@ body {
     margin-bottom: 5rem;
 }
 
-.whale-and-form {
-    justify-content: start;
-    margin-left: 26rem;
-}
-
 .whale-descript {
     max-width: 50%;
-    margin-right: 7rem;
     font-family: 'Merriweather Sans', sans-serif;
     color: var(--color5);
 }
 
 .whale-descript p {
     text-align: justify;
+    margin: auto;
 }
 
 .whale-descript .bar {
@@ -155,10 +144,12 @@ body {
 }
 
 .book-submit {
+    margin: auto;
     padding: 3em 4.5em 3em 2em;
     background-color: var(--color1);
     border-radius: 8%;
-    box-shadow: -10px 8px ;
+    box-shadow: -10px 8px var(--transparent) ;
+    margin-right: 9%;
 }
 
 .book-submit h6 {
@@ -223,36 +214,36 @@ footer {
     color: var(--color3);
 }
 
-footer .col-lg-3 {
+footer .col-md-6 {
     text-align: center;
     justify-content: center;
     padding-bottom: 2rem;
 }
 
-footer .col-lg-3 h5 {
+footer .col-md-6 h5 {
     font-weight: bold;
     font-size: 1.3rem;
 }
 
-footer .col-lg-3:hover h5 {
+footer .col-md-6:hover h5 {
     font-size: 1.5rem;
     transition: 0.3s;
 }
 
-footer .col-lg-3 li {
+footer .col-md-6 li {
     list-style: none;
     font-size: 1.2rem;
     margin-bottom: 0.7rem;
 }
 
-footer .col-lg-3 li a {
+footer .col-md-6 li a {
     text-decoration: none;
     color: var(--color3);
     padding: 0.4rem;
     border-radius: 10px;
 }
 
-footer .col-lg-3 li a:hover {
+footer .col-md-6 li a:hover {
     background-color:var(--color6);
     transition: 0.3s;
     font-size: 1.3rem;
@@ -266,13 +257,18 @@ footer p {
     font-weight: bold;
 }
 
+.row {
+    width: 60%;
+    margin: auto;
+}
+
 /* Media Query for Mobile Devices */
 @media (max-width: 480px) {
     header {
         width: 100%;
         margin: auto;
     }
-  
+
     .blue-section {
         background-color: var(--color1);
         height: 23rem;
@@ -334,8 +330,7 @@ footer p {
         margin: auto;
         margin-bottom: 1rem;
         margin-top: 1rem;
-        width: 50%;
-        
+        border: 2px solid var(--transparent);
     }
     
     .benefits-list {
@@ -480,24 +475,519 @@ footer p {
         font-weight: bold;
     } 
 }
+
+/* Media Query for low resolution  Tablets, Ipads */
+@media (min-width: 481px) and (max-width: 767px) {
+    /* body {
+        background-color: yellow;
+    } */
+    header {
+        width: 100%;
+        margin: auto;
+    }
+
+    .blue-section {
+        background-color: var(--color1);
+        height: 26rem;
+    }
+    
+    .white-section {
+        padding-top: 36rem;
+        background-color: var(--color3);
+        padding-bottom: 6rem;
+    }
+    
+    /*------------PICTURES------------*/
+    #editora-logo {
+        width: 10%;
+        margin-left: 1rem;
+    }
+    
+    #book-picture {
+        width: 60%;
+        margin: auto;
+    }
+
+    #book-picture:hover {
+        width: 61%;
+        transition: 0.5s; 
+    }
+    
+    #authors-picture {
+        width: 25%;
+        border-radius: 100%;
+    }
+    /*--------------------------------*/
+    .check-icon {
+        background-color: var(--color2);
+        padding: 0.5rem;
+        border-radius: 100%;
+        color: var(--color3);
+    }
+    
+    .flex-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        width: 80%;
+    }
+
+    .benefits-and-book {
+        flex-direction: column-reverse;
+    }
+
+    .benefits-form {
+        text-align: justify;
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    
+    .benefits-form button {
+        margin: auto;
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        border: 2px solid var(--transparent);
+    }
+    
+    .benefits-list {
+        margin: auto;
+        text-align: justify;
+        padding-left: 0;
+        width: 90%;
+    }
+    
+    .benefits-list li {
+        color: var(--color6);
+        font-size: 1.3rem;
+        font-weight: 600;
+        list-style: none;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+    
+    .benefits-list li h4 {
+        display: none;
+    }
+
+    .benefits-list .bar {
+        display: none;
+    }
+    
+    .btn-warning a {
+        font-family: 'Merriweather Sans', sans-serif;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 1.3rem;
+    }
+    
+    .whale-and-form {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin: auto;
+    }
+    
+    .whale-descript {
+        max-width: 90%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+    
+    .book-submit {
+        padding: 1em 0em 1em 0em;
+        background-color: var(--color1);
+        border-radius: 20px;
+        box-shadow: -10px 8px var(--transparent);
+        width: 80%;
+        margin: auto;
+    }
+    
+    .book-submit h6 {
+        text-align: center;
+        font-family: 'Merriweather Sans', sans-serif;
+        font-size: 1.2rem;
+        color: var(--color6);
+        width: 60%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .book-submit-input {
+        margin-bottom: 1rem;
+        width: 80%;
+        border: 1px solid var(--color6);
+        border-radius: 10px;
+    }
+    
+    .book-submit button {
+        margin-top: 0rem;
+    }
+    
+    .author-division {
+        border: 5px solid rgb(227, 227, 227);
+        border-radius: 3%;
+        display: block;
+        padding: 3rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 5rem;
+        box-shadow: none;
+    }
+    
+    .author-descript p {
+        font-family: 'Merriweather Sans', sans-serif;
+        color: var(--color5);
+        margin-top: 1rem;
+        text-align: justify;
+    }
+    
+    .author-medias {
+        text-align: center;
+        justify-content: center;
+        margin: auto;
+        margin-top: 2rem;
+    }
+    
+    .author-medias a {
+        color: var(--color1);
+        font-size: 2.5rem;
+        margin: 1rem;
+    }
+    
+    .author-medias:hover a {
+        font-size: 2.7rem;
+        transition: 0.5s;
+    }
+    
+    .author-medias a:hover {
+        font-size: 3rem;
+        transition: 0.3s;
+    }
+
+    footer {
+        padding-top: 3rem;
+        padding-bottom: 2rem;
+        background-color: var(--color2);
+        color: var(--color3);
+    }
+
+    .row {
+        width: 90%;
+        margin: auto;
+    }
+    
+    footer .col-lg-3 {
+        text-align: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        width: 100%;
+    }
+    
+    footer p {
+        text-align: center;
+        justify-content: center;
+        padding-top: 0.6rem;
+        font-size: 1rem;
+        font-weight: bold;
+    } 
+    
+}
   
 /* Media Query for Tablets Ipads portrait mode */
 @media (min-width: 768px) and (max-width: 1024px){
-    body {
+    /* body {
         background-color: blue;
+    } */
+
+    header {
+        width: 100%;
+        margin: auto;
+    }
+  
+    .blue-section {
+        background-color: var(--color1);
+        height: 31rem;
+    }
+    
+    .white-section {
+        padding-top: 10rem;
+        background-color: var(--color3);
+        padding-bottom: 6rem;
+    }
+    
+    /*------------PICTURES------------*/
+    #editora-logo {
+        width: 10%;
+        margin-left: 1rem;
+    }
+    
+    #book-picture {
+        width: 50%;
+        margin: auto;
+    }
+
+    #book-picture:hover {
+        width: 51%;
+        transition: 0.5s; 
+    }
+    
+    #authors-picture {
+        width: 22%;
+        border-radius: 100%;
+    }
+    /*--------------------------------*/
+    .check-icon {
+        background-color: var(--color2);
+        padding: 0.5rem;
+        border-radius: 100%;
+        color: var(--color3);
+    }
+    
+    .flex-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .benefits-form {
+        text-align: justify;
+        width: 70%;
+        margin: auto;
+        margin-left: 1rem;
+    }
+    
+    .benefits-form button {
+        margin-top: 2rem;
+    }
+    
+    .benefits-list {
+        text-align: justify;
+        margin-left: 0px;
+        padding-left: 0;
+        width: 90%;
+    }
+    
+    .benefits-list li {
+        color: var(--color3);
+        font-size: 1.3rem;
+        font-weight: 600;
+        list-style: none;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .benefits-list .bar {
+        margin-bottom: 1.5rem;
+    }
+
+    .btn-warning a {
+        font-family: 'Merriweather Sans', sans-serif;
+        text-decoration: none;
+        color: var(--black);
+        font-size: 1.3rem;
+    }
+    
+    .whale-and-form {
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        margin-left: 0;
+    }
+    
+    .whale-descript {
+        max-width: 70%;
+        margin: auto;
+        margin-bottom: 3rem;
+    }
+
+    .whale-descript .bar {
+        width: 50%;
+        margin-left: 18rem;
+    }
+    
+    .book-submit {
+        padding: 1em 0em 1em 0em;
+        background-color: var(--color1);
+        border-radius: 40px;
+        box-shadow: -10px 8px var(--transparent);
+        width: 50%;
+        margin: auto;
+    }
+    
+    .book-submit h6 {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .book-submit-input {
+        margin-bottom: 1rem;
+        width: 60%;
+        border: 1px solid var(--color6);
+        border-radius: 10px;
+    }
+
+    .author-division {
+        border: 5px solid rgb(227, 227, 227);
+        border-radius: 3%;
+        display: block;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 5rem;
+        box-shadow: none;
+    }
+
+    .row {
+        width: 90%;
+        margin: auto;
     }
 }
   
 /* Media Query for Laptops and Desktops */
 @media (min-width: 1025px) and (max-width: 1280px){
-    body {
+    /* body {
         background-color: green;
+    } */
+
+    header {
+        width: 100%;
+        margin-left: 1rem;
+    }
+  
+    .blue-section {
+        background-color: var(--color1);
+        height: 33rem;
+    }
+    
+    .white-section {
+        padding-top: 10rem;
+        background-color: var(--color3);
+        padding-bottom: 6rem;
+    }
+    
+    /*------------PICTURES------------*/
+    #editora-logo {
+        width: 8%;
+        margin-left: 1rem;
+    }
+    
+    #book-picture {
+        width: 40%;
+        margin: auto;
+    }
+
+    #book-picture:hover {
+        width: 41%;
+        transition: 0.5s; 
+    }
+    
+    #authors-picture {
+        width: 15%;
+        border-radius: 100%;
+    }
+    /*--------------------------------*/
+    .check-icon {
+        background-color: var(--color2);
+        padding: 0.5rem;
+        border-radius: 100%;
+        color: var(--color3);
+    }
+    
+    .flex-container {
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        margin: 0px;
+        width: 100%;
+    }
+
+    .benefits-form {
+        text-align: justify;
+        width: 60%;
+        margin: auto;
+        margin-left: 2rem;
+        margin-top: 1rem;
+    }
+    
+    .benefits-form button {
+        margin-top: 2rem;
+    }
+    
+    .benefits-list {
+        text-align: justify;
+        margin-left: 0px;
+        padding-left: 0;
+        width: 90%;
+    }
+    
+    .benefits-list li {
+        color: var(--color3);
+        font-size: 1.3rem;
+        font-weight: 600;
+        list-style: none;
+        margin-bottom: 1rem;
+        font-style: italic;
+    }
+
+    .benefits-list .bar {
+        margin-bottom: 3rem;
+    }
+
+    .btn-warning a {
+        font-size: 1.3rem;
+    }
+    
+    .whale-descript {
+        max-width: 40%;
+        margin: auto;
+        margin-bottom: 3rem;
+        margin-right: 0rem;
+    }
+
+    .whale-descript .bar {
+        width: 50%;
+    }
+    
+    .book-submit {
+        padding: 1em 1em 1em 1em;
+        width: 30%;
+        margin: auto;
+        margin-left: 17rem;
+    }
+    
+    .book-submit h6 {
+        text-align: center;
+        width: 100%;
+        margin: auto;
+        margin-bottom: 0.5rem;
+    }
+    
+    .book-submit-input {
+        margin-bottom: 1rem;
+        width: 70%;
+        border: 1px solid var(--color6);
+        border-radius: 10px;
+    }
+
+    .author-division {
+        border: 5px solid rgb(227, 227, 227);
+        border-radius: 3%;
+        display: block;
+        padding: 2rem;
+        width: 90%;
+        margin: auto;
+        margin-top: 5rem;
+        box-shadow: none;
+    }
+
+    .row {
+        width: 90%;
+        margin: auto;
     }
 }
   
-/* Media Query for Large screens */
-@media (min-width: 1281px) {
-    body {
-        background-color: white;
-    }
-}
